@@ -13,10 +13,10 @@ public class Vino {
     private URI imagen;
     private Bodega bodega;
     private List<Maridaje> maridajes;
-    private List<Varietal> varietales;
+    private Varietal varietales;
     private ArrayList<Resena> resena;
 
-    public Vino(String nombre, double precio, double notaCata, Date anada, URI imagen, Bodega bodega, List<Maridaje> maridajes, List<Varietal> varietales, ArrayList<Resena> resena) {
+    public Vino(String nombre, double precio, double notaCata, Date anada, URI imagen, Bodega bodega, List<Maridaje> maridajes, Varietal varietales, ArrayList<Resena> resena) {
         this.nombre = nombre;
         this.precio = precio;
         this.notaCata = notaCata;
@@ -44,7 +44,7 @@ public class Vino {
         return maridajes;
     }
 
-    public List<Varietal> getVarietales() {
+    public Varietal getVarietales() {
         return varietales;
     }
 
@@ -56,7 +56,7 @@ public class Vino {
         this.maridajes = maridajes;
     }
 
-    public void setVarietales(List<Varietal> varietales) {
+    public void setVarietales(Varietal varietales) {
         this.varietales = varietales;
     }
 
@@ -140,5 +140,9 @@ public class Vino {
 
     public Bodega buscarInfoBodega() {
         return bodega;
+    }
+
+    public Varietal buscarVarietal() {
+        return varietales;
     }
 }

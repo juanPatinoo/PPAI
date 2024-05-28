@@ -1,22 +1,13 @@
 package org.example;
 
 public class Provincia {
-    private String descripcion;
+
     private String nombre;
 
     private static Pais pais;
 
-    public Provincia(String descripcion, String nombre) {
-        this.descripcion = descripcion;
+    public Provincia(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
     }
 
     public String getNombre() {

@@ -3,8 +3,8 @@ package org.example;
 public class Region {
     private String descripcion;
     private String nombre;
-
     private static Provincia provincia;
+
 
     public Region(String descripcion, String nombre) {
         this.descripcion = descripcion;

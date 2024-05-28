@@ -19,7 +19,7 @@ public class PantallaGenerarRanking {
 
     public PantallaGenerarRanking() {
         ventana = new JFrame("Mi Ventana Simple");
-        ventana.setSize(800, 600); // Ancho: 800, Alto: 600
+        ventana.setSize(600, 400);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setLayout(new FlowLayout());
 

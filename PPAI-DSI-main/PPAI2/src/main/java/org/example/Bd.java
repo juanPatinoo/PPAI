@@ -25,7 +25,7 @@ public class Bd {
 
         varietales.add(new Varietal("Descripción Varietal1", 0.5, tiposUva.get(0)));
         varietales.add(new Varietal("Descripción Varietal2", 0.5, tiposUva.get(1)));
-        varietales.add(new Varietal("Descripción Varietal2", 0.5, tiposUva.get(2)));
+        varietales.add(new Varietal("Descripción Varietal3", 0.5, tiposUva.get(2)));
 
         maridajes.add(new Maridaje("Descripción Maridaje1", "Nombre Maridaje1"));
         maridajes.add(new Maridaje("Descripción Maridaje2", "Nombre Maridaje2"));
@@ -51,9 +51,9 @@ public class Bd {
         resenas.add(resenasVino3.get(0));
 
         // Crear objetos de Vino con el nuevo constructor
-        vinos.add(new Vino("Nombre Vino1", 100.0, 4.5, new Date(), URI.create("http://imagen1.com"), bodegas.get(0), List.of(maridajes.get(0)), List.of(varietales.get(0)), resenasVino1));
-        vinos.add(new Vino("Nombre Vino2", 200.0, 4.8, new Date(), URI.create("http://imagen2.com"), bodegas.get(0), List.of(maridajes.get(1)), List.of(varietales.get(1)), resenasVino2));
-        vinos.add(new Vino("Nombre Vino3", 300.0, 4.6, new Date(), URI.create("http://imagen3.com"), bodegas.get(0), List.of(maridajes.get(2)), List.of(varietales.get(2)), resenasVino3));
+        vinos.add(new Vino("Nombre Vino1", 100.0, 4.5, new Date(), URI.create("http://imagen1.com"), bodegas.get(0), List.of(maridajes.get(0)), varietales.get(0), resenasVino1));
+        vinos.add(new Vino("Nombre Vino2", 200.0, 4.8, new Date(), URI.create("http://imagen2.com"), bodegas.get(0), List.of(maridajes.get(1)), varietales.get(1), resenasVino2));
+        vinos.add(new Vino("Nombre Vino3", 300.0, 4.6, new Date(), URI.create("http://imagen3.com"), bodegas.get(0), List.of(maridajes.get(2)), varietales.get(2), resenasVino3));
 
         // Asignar los vinos a las reseñas
         resenasVino1.get(0).setVino(vinos.get(0));

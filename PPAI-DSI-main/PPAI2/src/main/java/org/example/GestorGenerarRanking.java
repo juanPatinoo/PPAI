@@ -103,16 +103,22 @@ public class GestorGenerarRanking {
                 Region region = bodega.buscarRegionYPais();
                 String nombreRegion = region.getNombre();
 
-                Provincia provincia = region.buscarPais();
-                Pais pais = provincia.buscarPais();
-                String nombrePais = pais.getNombre();
+ //               Provincia provincia = region.buscarPais();
+ //               Pais pais = provincia.buscarPais();
+ //               String nombrePais = pais.getNombre();
+
+                Varietal varietal = vino.buscarVarietal();
+                String descripcionVarietal = varietal.getDescripcion();
 
 
+                System.out.println("------------------------------------------------------------");
                 System.out.println("Vino: " + nombreVino);
                 System.out.println("Precio: " + precioVino);
                 System.out.println("Bodega: " + nombreBodega);
                 System.out.println("Región: " + nombreRegion);
-                System.out.println("País: " + nombrePais);
+                //System.out.println("País: " + nombrePais);
+                System.out.println("Descripcion Varietal: " + descripcionVarietal);
+                System.out.println("------------------------------------------------------------");
             }
         }
     }
